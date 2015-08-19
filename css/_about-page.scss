@@ -1,0 +1,74 @@
+.profile {
+	text-align: center;
+	margin-top: 80px;
+	img {
+		border-radius: 100%;
+		@include BoxShadow;
+		display: inline-block;
+		max-width: 200px;
+
+	}
+}
+
+.skills {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+
+	@media screen and (min-width: $screen-medium) {
+		width: 60%;
+	}
+
+	.skillbar {
+		position: relative;
+		display: block;
+		margin-bottom: 15px;
+		width: 100%;
+		background: #eee;
+		height: 30px;
+		border-radius: 3px;
+		transition: 0.4s linear;
+		transition-property: width, background-color;
+	}
+
+	.skillbar-title {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100px;
+		font-weight: bold;
+		font-size: 13px;
+		color: #fff;
+		background: #6adcfa;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+
+	.skillbar-title span {
+		display: block;
+		background: rgba(0, 0, 0, 0.1);
+		padding: 0 20px;
+		height: 30px;
+		line-height: 30px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+
+	.skillbar-bar {
+		height: 30px;
+		width: 0px;
+		background: #6adcfa;
+		border-radius: 3px;
+	}
+
+	.skill-bar-percent {
+		position: absolute;
+		right: 10px;
+		top: 0;
+		font-size: 11px;
+		height: 30px;
+		line-height: 35px;
+		color: #fff;
+		color: rgba(0, 0, 0, 0.4);
+	}
+}

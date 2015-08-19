@@ -1,0 +1,50 @@
+/* Basics */
+$primary-color: #f3f3f3;
+$text-color: #333;
+$accent-color: #3497da;
+$bg-color: #fff;
+$link-color: $accent-color;
+$link-hover: #fff;
+$selection-color: #FFF498;
+$nav-color: radial-gradient(ellipse at center, #2f4052 0%,#3f4c6b 100%);
+
+/* Mixins */
+@mixin BoxShadow() {
+	box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+/* Media queries */
+$screen-medium: 480px;
+
+
+/* Global Settings */
+
+*, *:after, *::before {
+	box-sizing: border-box;
+	list-style: none;
+
+	a, a:hover {
+		text-decoration: none;
+	}
+}
+
+body {
+    background: $bg-color; 
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 40%, #bbbbbb 100%); 
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(40%,#ffffff), color-stop(100%,#bbbbbb)); 
+    background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: -o-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); 
+    background: -ms-radial-gradient(center, ellipse cover,  #ffffff 40%,#bbbbbb 100%); background: radial-gradient(ellipse at center,  #ffffff 40%,#bbbbbb 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbbbbb',GradientType=1 );
+
+
+	font-family: "Ubuntu", sans-serif;
+}
+
+.hr {
+	background: $text-color;
+	border-radius: 50%;
+	margin: 40px auto 15px;
+	width: 60%;
+	height: 5px;
+}

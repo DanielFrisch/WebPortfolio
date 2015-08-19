@@ -1,0 +1,42 @@
+
+.work {
+
+	.intro {
+		margin: 100px 0 60px;
+		text-align: center;
+		text-transform: uppercase;
+
+		a{
+			color: $text-color;
+
+			&:hover {
+				color: $text-color;
+		}
+
+			h1 {
+				font: bold;
+				font-size: 4em;
+				letter-spacing: 0.06em;
+				margin: 15px 0 5px;
+
+    	}
+
+	    	h2 {
+	    		font-size: 2em;
+	    		margin: 0 0 20px;
+	  		}
+		}
+	}
+
+
+	ul {
+		columns: 290px 2;
+		column-gap: 2em;
+		padding: 0;
+
+		li {
+			@include BoxShadow;
+			margin-bottom: 2em;
+		}
+	}
+}

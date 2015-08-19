@@ -1,2 +1,4 @@
-# WebPortfolio
-My Web Developer Portfolio
+# WebDevPortfolio
+Daniel Frisch's web developer portfolio.
+
+Work in progress of my web developer portfolio
